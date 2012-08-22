@@ -1,0 +1,25 @@
+<?php defined('SYSPATH') or die('No direct access allowed.');
+
+/**
+ * Config for BrickFI cache
+ * 
+ * @author     David Kobia <david@ushahidi.com>
+ * @package	   BrickFI
+ * @subpackage configs
+ * @copyright  BrickFI - http://www.brickfi.com
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License v3 (GPLv3) 
+ */
+
+return array(
+	'default' => array(           		// Default group
+		'driver' => 'memcache',			// using Memcache driver
+		'servers' => array(             // Available server definitions
+			array(
+				'host' => 'localhost',
+				'port' => 11211,
+				'persistent' => FALSE
+			)
+		),
+		'compression' => FALSE,			// Use compression?
+	)
+);

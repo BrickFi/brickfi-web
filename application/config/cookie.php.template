@@ -1,0 +1,26 @@
+<?php defined('SYSPATH') or die('No direct script access');
+/**
+ * Config for BrickFI cookies
+ * 
+ * @author     David Kobia <david@ushahidi.com>
+ * @package	   BrickFI
+ * @subpackage configs
+ * @copyright  BrickFI - http://www.brickfi.com
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License v3 (GPLv3) 
+ */
+
+return array(
+
+	// Restrict the domain the cookie is available to
+    'domain' => 'example.com',
+
+    // Only transmit cookies over secure connections
+    'secure' => FALSE,
+
+    // Magic salt to add to the cookie
+    // NOTE: This is the default value and MUST be changed on your deployment
+    'salt' => 'WqLHtxZ3X4iGu%<CceGZwR3dAd?3Z4BW',
+
+    // Number of seconds before the cookie expires
+    'expiration' => 0
+);

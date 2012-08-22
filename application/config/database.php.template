@@ -1,0 +1,30 @@
+<?php defined('SYSPATH') or die('No direct access allowed.');
+
+/**
+ * Config for BrickFI database
+ * 
+ * @author     David Kobia <david@ushahidi.com>
+ * @package	   BrickFI
+ * @subpackage configs
+ * @copyright  BrickFI - http://www.brickfi.com
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License v3 (GPLv3) 
+ */
+
+return array
+(
+	'default' => array
+	(
+		'type'       => 'mysql',
+		'connection' => array(
+			'hostname'   => '',
+			'database'   => '',
+			'username'   => '',
+			'password'   => '',
+			'persistent' => FALSE,
+		),
+		'table_prefix' => '',
+		'charset'      => 'utf8',
+		'caching'      => TRUE,
+		'profiling'    => TRUE,
+	)
+);

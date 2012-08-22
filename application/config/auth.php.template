@@ -1,0 +1,23 @@
+<?php defined('SYSPATH') or die('No direct access allowed.');
+
+/**
+ * Config for BrickFI Auth
+ * 
+ * @author     David Kobia <david@ushahidi.com>
+ * @package	   BrickFI
+ * @subpackage configs
+ * @copyright  BrickFI - http://www.brickfi.com
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License v3 (GPLv3) 
+ */
+
+return array(
+	'driver'       => 'ORM',
+	'hash_method'  => 'sha256',
+	'hash_key'     => 'qC[bi>QTcWKr.w%f0nyo"(}%&dugXj~;', // replace with random string
+	'lifetime'     => 1209600,
+	'session_key'  => 'auth_user',
+	'users'        => array(),
+
+	// No authentication for these controllers
+	'ignore_controllers' => array('login')
+);
